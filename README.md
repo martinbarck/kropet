@@ -1,6 +1,7 @@
 # Kropet - Mi Proyecto de Accesorios para Mascotas
 
-Este es mi proyecto final para la materia de Frontend. Es una tienda online para Kropet.
+Este es mi proyecto entrega pre-proyecto para la materia de Frontend. 
+Es una tienda online para Kropet.
 
 ## Tecnologías
 - HTML5
