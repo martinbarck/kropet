@@ -1,0 +1,498 @@
+:root {
+    --violeta: #6A0DAD;
+    --verde: #3CB371;
+    --vioclaro: #a23ddd;
+    --blanco: #ffffff;
+    --negro: #9d9e65d2;
+    --texto: #444444;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--texto);
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.header-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.8rem;
+    color: var(--texto);
+}
+
+h1.site-title {
+    color: var(--blanco);
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.site-title img {
+    height: 90px;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--violeta);
+}
+
+a:hover {
+    color: var(--verde);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+header {
+    background-color: var(--violeta);
+    color: var(--blanco);
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--blanco);
+}
+
+.logo {
+    margin-right: auto;
+    padding-left: 20px;
+}
+
+.menu {
+    margin: 0 auto;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: var(--blanco);
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.menu ul li a:hover {
+    color: var(--verde);
+    }
+
+.carrito {
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+.carrito a {
+    color: var(--verde);
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.carrito a:hover {
+    color: var(--blanco);
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: var(--verde);
+    color: var(--blanco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn:hover {
+    background-color: #2E8B57;
+}
+
+/* Secciones */
+section {
+    padding: 3rem 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+    color: var(--violeta);
+}
+
+.hero-section {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url('assets/images/perroygato.jpg');
+    
+    background-color: var(--violeta);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    color: var(--blanco);
+    padding: 5rem 0;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h2 {
+    font-size: 2.8rem;
+    color: var(--blanco);
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+.hero-section p span {
+    font-weight: bold;
+    color: #59e759;
+    padding: 2px 5px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Productos */
+.productos-section {
+    background-color: var(--blanco);
+}
+
+.productos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.productos-card {
+    background-color: var(--blanco);
+    border: 1px solid #6d6b6aea;
+    border-radius: 15px;
+    padding: 1.5rem;
+    flex-basis: 280px;
+    flex-grow: 1;
+    max-width: 330px;
+    box-shadow: 0 4px 8px rgba(27, 129, 87, 0.288);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productos-card:hover {
+    box-shadow: 0 6px 12px rgba(185, 47, 47, 0.12);
+}
+
+.productos-card img {
+    margin-bottom: 1rem;
+    max-height: 220px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.productos-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.productos-card .precio {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--verde);
+    margin-bottom: 0.75rem;
+}
+
+.productos-card p:not(.precio) {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.productos-features {
+    list-style: disc;
+    margin: 0.5rem 0 1rem 1.5rem;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Reseñas */
+.reseñas-section {
+    background-color: var(--vioclaro);
+}
+
+.reseñas-section h2 {
+    color: #bdb6c2;
+}
+
+.reseñas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.review-item {
+    background-color: var(--blanco);
+    border: 1px solid #d1b3e8;
+    border-left: 6px solid var(--verde);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(153, 74, 74, 0.822);
+}
+
+.review-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #532E6D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-item .stars {
+    color: #FFC107;
+    font-size: 1.1rem;
+}
+
+.review-item p {
+    font-size: 0.95rem;
+}
+
+/* Contacto */
+.contacto-section {
+    background-color: var(--blanco);
+}
+
+#contact-form {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: #a853e9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(106, 13, 173, 0.1);
+}
+
+#contact-form div {
+    margin-bottom: 1.5rem;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #532E6D;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c5a8de;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+#contact-form input[type="text"]:focus,
+#contact-form input[type="email"]:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: var(--violeta);
+}
+
+#contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#contact-form button.btn {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 12px;
+    background-color: var(--violeta);
+}
+
+#contact-form button.btn:hover {
+    background-color: #480870;
+}
+
+
+footer {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url('assets/images/boxer.jpg');
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    color: #e0e0e0;
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+    position: relative;
+}
+
+footer .footer-info {
+    margin-bottom: 1.5rem;
+}
+
+footer .footer-info dt {
+    font-weight: bold;
+    color: #90EE90;
+    margin-top: 0.75rem;
+    font-family: 'roboto', sans-serif;
+}
+
+footer .footer-info dd {
+    margin-left: 0;
+    font-size: 0.9rem;
+}
+
+footer .social-links span {
+    margin: 0 12px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--blanco);
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    .menu {
+        margin: 1rem auto;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu ul li {
+        margin: 0.7rem 0;
+    }
+
+    .carrito {
+        margin: 0 auto;
+        padding-right: 0;
+    }
+
+    .hero-section {
+        padding: 3rem 0;
+        min-height: 50vh;
+    }
+
+    .hero-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .productos-card {
+        flex-basis: calc(50% - 13px);
+        max-width: calc(50% - 13px);
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-section {
+        padding: 2rem 0;
+        min-height: 40vh;
+    }
+
+    .hero-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .productos-card {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .reseñas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #contact-form {
+        padding: 1.5rem;
+    }
+
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    #contact-form button.btn {
+        font-size: 1rem;
+    }
+
+    footer .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+}
