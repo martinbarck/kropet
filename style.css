@@ -58,11 +58,11 @@ h1.site-title {
 
 a {
     text-decoration: none;
-    color: var(--violeta);
+    color: var(--verde);
 }
 
 a:hover {
-    color: var(--verde);
+    color: var(--violeta);
 }
 
 ul {
@@ -144,7 +144,7 @@ header {
     background-color: #2E8B57;
 }
 
-/* Secciones */
+
 section {
     padding: 3rem 0;
 }
@@ -195,7 +195,7 @@ section h2 {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Productos */
+
 .productos-section {
     background-color: var(--blanco);
 }
@@ -259,7 +259,7 @@ section h2 {
     color: #555;
 }
 
-/* Reseñas */
+
 .reseñas-section {
     background-color: var(--vioclaro);
 }
@@ -301,7 +301,7 @@ section h2 {
     font-size: 0.95rem;
 }
 
-/* Contacto */
+
 .contacto-section {
     background-color: var(--blanco);
 }
@@ -353,7 +353,7 @@ section h2 {
     width: 100%;
     font-size: 1.1rem;
     padding: 12px;
-    background-color: var(--violeta);
+    background-color: var(--verde);
 }
 
 #contact-form button.btn:hover {
@@ -363,7 +363,7 @@ section h2 {
 
 footer {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        linear-gradient(rgba(139, 81, 81, 0.5), rgba(161, 146, 146, 0.5)),
         url('assets/images/boxer.jpg');
 
     background-size: cover;
@@ -397,7 +397,7 @@ footer .social-links span {
     margin: 0 12px;
     font-weight: bold;
     font-size: 1.1rem;
-    color: var(--blanco);
+    color: var(--verde);
 }
 
 footer p {
@@ -405,7 +405,7 @@ footer p {
     margin-top: 0.5rem;
 }
 
-/* Media Queries */
+
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
